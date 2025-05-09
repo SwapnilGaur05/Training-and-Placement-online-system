@@ -1,0 +1,370 @@
+/* Student Panel Styles */
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+  color: var(--primary-color);
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+.sidebar .nav-link.active {
+  color: var(--primary-color);
+  background-color: rgba(52, 152, 219, 0.1);
+}
+
+.sidebar .nav-link i {
+  margin-right: 0.5rem;
+  color: #666;
+}
+
+.sidebar .nav-link.active i {
+  color: var(--primary-color);
+}
+
+/* Student Info Section */
+.student-info {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.student-profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.student-details h4 {
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+.student-details p {
+  margin: 0.25rem 0;
+  color: #666;
+}
+
+/* Job Listings */
+.job-card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+}
+
+.job-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.job-title {
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.company-name {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.job-type-badge {
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.job-type-badge.full-time {
+  background-color: rgba(46, 204, 113, 0.1);
+  color: #2ecc71;
+}
+
+.job-type-badge.part-time {
+  background-color: rgba(243, 156, 18, 0.1);
+  color: #f39c12;
+}
+
+.job-type-badge.internship {
+  background-color: rgba(52, 152, 219, 0.1);
+  color: #3498db;
+}
+
+/* Applications Table */
+.applications-table {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.applications-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.applications-table td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+.status-badge {
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.status-badge.applied {
+  background-color: rgba(52, 152, 219, 0.1);
+  color: #3498db;
+}
+
+.status-badge.shortlisted {
+  background-color: rgba(243, 156, 18, 0.1);
+  color: #f39c12;
+}
+
+.status-badge.selected {
+  background-color: rgba(46, 204, 113, 0.1);
+  color: #2ecc71;
+}
+
+.status-badge.rejected {
+  background-color: rgba(231, 76, 60, 0.1);
+  color: #e74c3c;
+}
+
+/* Events Section */
+.event-card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.event-image {
+  height: 200px;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-details {
+  padding: 1.5rem;
+}
+
+.event-date {
+  color: var(--primary-color);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-title {
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.event-location {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Resume Section */
+.resume-section {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.resume-section h3 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background-color: #f8f9fa;
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Dashboard Stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-icon {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-card-header {
+    flex-direction: column;
+  }
+
+  .job-type-badge {
+    margin-top: 0.5rem;
+  }
+}
+
+/* Form Styles */
+.form-section {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-section .form-label {
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.form-section .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Alert Messages */
+.alert {
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.alert-success {
+  background-color: rgba(46, 204, 113, 0.1);
+  border-color: #2ecc71;
+  color: #27ae60;
+}
+
+.alert-danger {
+  background-color: rgba(231, 76, 60, 0.1);
+  border-color: #e74c3c;
+  color: #c0392b;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.pagination .page-link {
+  color: var(--primary-color);
+  border-radius: 0.25rem;
+  margin: 0 0.25rem;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* Loading States */
+.loading-spinner {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 0.2rem solid #f3f3f3;
+  border-top: 0.2rem solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
