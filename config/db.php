@@ -1,9 +1,9 @@
 <?php
 // Database configuration
 $db_host = 'localhost';
-$db_user = 'root';  // Default WAMP MySQL username
-$db_pass = 'root';      // Default WAMP MySQL password
-$db_name = 'tpos_db';
+$db_user = '';  // Default WAMP MySQL username
+$db_pass = '';      // Default WAMP MySQL password
+$db_name = '';
 
 // Create connection
 $conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
